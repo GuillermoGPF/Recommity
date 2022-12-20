@@ -1,0 +1,229 @@
+body {
+    background: #16181d;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-weight: 600;
+    color: #d44807;
+}
+
+p {
+    margin: 0;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Button */
+button {
+    background-color: #d44807;
+    font-weight: 700;
+    color: #fff;
+    padding: 0.75em;
+    border-radius: 0.5em;
+    border: solid 2px #d44807;
+    transition: all 500ms ease-in-out;
+}
+
+
+button.second {
+    background: none;
+    border: solid 2px #d44807;
+}
+
+button:hover {
+    background-color: #ae3b06;
+}
+
+.link {
+    color: #d44807;
+    font-weight: 700;
+    padding: 0.75em;
+    transition: all 500ms ease-in-out;
+}
+
+.link:hover {
+    color: #fff;
+}
+
+
+/* Home */
+section {
+    position: relative;
+}
+
+section img {
+    position: absolute;
+}
+
+nav {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+nav img {
+    width: 70%;
+    position: absolute;
+    z-index: 0;
+}
+
+.warrior1 {
+    left: -20%;
+}
+
+.warrior2 {
+    right: -20%;
+}
+
+nav .card {
+    width: 100%;
+    background-color: rgb(40, 44, 52, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    padding: 1em;
+    z-index: 1;
+}
+
+nav .card figure {
+    width: 100%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Profile */
+article {    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #16181d;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+article .container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.profile {
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em auto;
+}
+
+.profile h2 {
+    text-align: center;
+}
+
+.profile hr {
+    background-color: lightgrey;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 1em;
+    overflow: hidden;
+    background: #282c34;
+}
+
+.modalLogin .modal-content {
+    background-image: url(../public/img/vector3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modalSignup .modal-content {
+    background-image: url(../public/img/vector4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal-body {
+    background: rgb(40, 44, 52, 0.7);
+}
+
+.modal button {
+    margin: 2em 0;
+}
+
+
+/* Forms */
+form button {
+    width: 100%;
+}
+
+.form-control,
+textarea {
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0;
+    margin: 0;
+    padding: 0 1em;
+    outline: none;
+    background: none;
+    box-shadow: none!important;
+    border: none;
+    border-bottom: 2px solid #d44807;
+    transition: all 500ms ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #ae3b06;
+    color: #fff;
+    background: none;
+}
+
+label {
+    margin: 1em auto;
+    color: lightgrey;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+
+/* Responsive design */
+@media (max-width: 767px) {
+    nav figure {
+        flex-direction: column;
+    }
+
+    nav figure button {
+        width: 100%;
+        margin: 1em auto;
+    }
+    
+    .warrior1 {
+        width: 150%;
+        top: 0;
+        left: -85%;
+    }
+    
+    .warrior2 {
+        width: 150%;
+        top: 0;
+        right: -80%;
+    }
+}

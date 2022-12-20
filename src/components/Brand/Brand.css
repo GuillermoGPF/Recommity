@@ -1,0 +1,10 @@
+.brand {
+    font-family: 'Courgette', cursive;
+    color: #d44807;
+    font-weight: 600;
+    transition: all 500ms ease-in-out;
+}
+
+.brand:hover {
+    color: #ae3b06;
+}
